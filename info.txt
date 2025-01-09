@@ -1,0 +1,49 @@
+En consola:
+1- npm init
+2- Instalar dependencias
+    - npm install express
+    - sudo npm install --save-dev nodemon // Solo se requiere en desarrollo porque estara reiniciando el codigo
+3- Crear archivo index.json
+4- Modificar package.json en scripts - dev
+5- Consola: npm run dev
+6- Modificar package.json añadiendo -> "type": "module" (encima del autor)
+7- Creamos las routes.
+8- npm install pug
+9- Agregar la carpeta publica en index.js
+10- Comandos para ver la BBDD y crearla con Table Plus
+11- Crear carpeta config + db.js
+
+
+---
+
+BBDD consola 
+1- brew services list
+2- brew services start mysql@8.0
+3- brew link mysql@8.0 --force
+4- mysql -u root -p
+    4.1- SHOW DATABASES;
+
+Instalar dependencias:
+1- npm install sequelize sqlite3 (si despues de hacer esto, npm run dev da error: npm install mysql2)
+
+
+-----
+
+Deployment en PRO:
+1- npm i dotenv
+2- Exportar DB en consola:
+    - mysqldump -u root -p agenciaviajes > agenciaviajes.sql
+    - open .
+3- Importarla gratuitamente en: https://dash.filess.io/#/app/databases
+
+-----
+
+1- Crear un repositorio en github y copiar los comandos en la consola:
+    echo "# agenciaviajesnode" >> README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+    git branch -M main
+    git remote add origin https://github.com/jbanosr/agenciaviajesnode.git
+    git push -u origin main
+2- Crear archivo .gitignore (en él se indican qué archivos no queremos enviar al GIT, como por ejemplo. .env)
