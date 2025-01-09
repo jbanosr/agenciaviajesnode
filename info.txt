@@ -41,9 +41,11 @@ Deployment en PRO:
 1- Crear un repositorio en github y copiar los comandos en la consola:
     echo "# agenciaviajesnode" >> README.md
     git init
+2- Crear archivo .gitignore (en él se indican qué archivos no queremos enviar al GIT, como por ejemplo. .env)
+3- git add . (agrega todos los archivos)
+4- Más comandos en consola:
     git add README.md
     git commit -m "first commit"
     git branch -M main
     git remote add origin https://github.com/jbanosr/agenciaviajesnode.git
     git push -u origin main
-2- Crear archivo .gitignore (en él se indican qué archivos no queremos enviar al GIT, como por ejemplo. .env)
